@@ -12,7 +12,7 @@ interface Song {
 }
 
 const App: React.FC = () => {
-  const [songs, setSongs] = useState<Song[]>(songsdata);
+  const [songs] = useState<Song[]>(songsdata);
   const [isplaying, setIsPlaying] = useState<boolean>(false);
   const [currentSong, setCurrentSong] = useState<Song>(songsdata[0]);
   const [showPlayer, setShowPlayer] = useState<boolean>(true);
