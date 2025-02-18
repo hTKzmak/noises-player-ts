@@ -10,6 +10,7 @@ export default function MiniPlayer({ isplaying, setIsPlaying, currentSong, setSh
         setIsPlaying(!isplaying);
     }
 
+    // исчезновение плеера
     const removePlayer = () => {
         setIsPlaying(false)
         setShowPlayer(false)
